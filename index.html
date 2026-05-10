@@ -15,8 +15,8 @@
                 <img src="images/logo.png" class="logo">
                 <div class="menu">
                     <a class = "menu_item" href="#reg">Зареєструватися</a>
-                    <a class = "menu_item" href="#">Про сайт</a>
-                    <a class = "menu_item" href="#">Щось</a> 
+                    <a class="menu_item" href="#" data-modal="about">Про сайт</a>
+                    
                 </div>
             </div>
             <p class = p_apec>Project:APEC-1</p>
@@ -105,6 +105,48 @@ ARES·I — це не туристичний форпост. Це самодос
             <p>Control — AI autonomous management</p>
     </div>
 </div>
+
+
+<div id="vikno_overlay" class="vikno_overlay" onclick="if(event.target===this)this.classList.remove('active')">
+        <div class = "modal-vikno">
+            <div class="modal-kut-br"></div>
+            <button class ="modal-hreshchyk" onclick="document.getElementById('vikno_overlay').classList.remove('active')">[ ESC ]</button>
+
+            <div class = "modal-verhnya">/ ABOUT — PROJECT:APEC-1</div>
+            <h1 class="modal_info_blok">Mars Journey</h1>
+            <div class="modal-pidzag">ПЕРША ЛЮДСЬКА КОЛОНІЯ ЗА МЕЖАМИ ЗЕМЛІ</div>
+
+            <hr class = "modal-liniya">
+
+            <p class ="modal-text_small">Цей сайт — інформаційний портал місії ARES·I. Ми збираємо першу сотню людей, які залишать Землю і побудують нову цивілізацію на Марсі. Інженери. Лікарі. Вчені. І один пес.</p>
+            <p class ="modal-text_small">Проєкт розроблено як відкрита платформа для відбору учасників, хронологія місії та технічна документація бази APEC-1.</p>
+
+            <div class="infa_modal">
+                <div class = "modal-kartka">
+                    <span class="stat-nazva">СТАТУС МІСІЇ</span>
+                    <div class = "stat-chyslo">ACTIVE <small>▸</small></div>
+                </div>
+
+                <div class = "modal-kartka">
+                    <span class="stat-nazva">ЗАПУСК</span>
+                    <div class = "stat-chyslo">2028 <small>р.</small></div>
+                </div>
+
+                <div class = "modal-kartka">
+                    <span class="stat-nazva">ЕКІПАЖ</span>
+                    <div class="stat-chyslo">100 <small>осіб</small></div>
+                </div>
+
+                <div class = "modal-kartka">
+                    <span class="stat-nazva">ВЕРСІЯ САЙТУ</span>
+                    <div class ="stat-chyslo">0.1 <small>beta</small></div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+<script src="script.js"></script>
 </body>
 <footer class="mars-footer">
                                                 <!--UiVerse-->
@@ -160,6 +202,9 @@ ARES·I — це не туристичний форпост. Це самодос
     </div>
     </section>
 </footer>
+
+
+
 </html>
 
 
